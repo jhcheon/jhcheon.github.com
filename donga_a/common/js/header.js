@@ -1,0 +1,2 @@
+document.write("<title> MBC뮤직 :: I MUSIC U, 당신과 음악의 새로운 만남</title>");
+document.write("<meta name='keywords' content='MBC, 음악, 방송, MBC플러스미디어, MBC플러스, MBC미디어, MBC+, MBC뮤직, 음악, 뮤직, 편성표, 온에어, 바로보기, VOD'>");

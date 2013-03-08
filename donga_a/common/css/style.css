@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+@import url('layout.css'); 
+@import url('common.css'); 
+@import url('content.css');
+
+<<<<<<< .mine
+.pr_wrapArea{position: absolute; width:1920px; bottom:0px; left:50%; margin-left: -952px; background:url("../../images/pr_center/bg_header.gif") 0 0 no-repeat;}
+.pr_wrap{width:100%;background:url("../../images/pr_center/bg_container.gif") repeat;}
+.pr_header{display:none; width:967px;height:31px;margin:0 auto;background:url("../../images/pr_center/pr_header.gif") 0 0 no-repeat;}
+.pr_header ul{overflow:hidden;margin-left:162px;}   
+.pr_header ul li{float:left;}
+.pr_header ul li a{display:inline-block;padding:15px 80px;}
+=======
+>>>>>>> .r7358
+
+
+
+
+
+
+
+
+
+
+
+
+
+

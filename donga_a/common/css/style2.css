@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+@import url('layout.css'); 
+@import url('common.css'); 
+@import url('content.css');
+
+.pr_wrapArea{position: absolute; width:1920px; height: 991px; top:0px; left:0px; background:url("../../images/pr_center/bg_header.gif") 0 0 no-repeat;}
+.pr_wrap{width:100%;background:url("../../images/pr_center/bg_container02.gif") repeat;}
+.pr_header{width:967px;height:31px;margin:0 auto;background:url("../../images/pr_center/pr_header.gif") 0 0 no-repeat; }
+.pr_header ul{overflow:hidden;margin-left:162px; height: 100px}   
+.pr_header ul li{float:left; height: 100px;}
+.pr_header ul li a{display:inline-block;padding:15px 80px; height: 100px; }
+
+.pr_container{width:967px;height:740px;margin:0 auto;background:url("../../images/pr_center/pr_center.jpg") 0 0 no-repeat;}
+.pr_container ul{width:465px;padding-top:403px;}
+.pr_container ul li{}
+.pr_container ul li a{display:inline-block;padding:50px 232px;}
+
+.bg_bottom{height:181px;background:url("../../images/pr_center/bg_bottom.gif") 0 0 no-repeat;}
+.pr_bottom{width:967px;height:181px;margin:0 auto;background:url("../../images/pr_center/pr_bottom.gif" ) 0 0 no-repeat;}
+
+.pr_history{height:651px;background:url("../../images/pr_center/pr_history.jpg") 0 0 no-repeat;}
+.br_years{background:#d5d2cb;height:249px;}
+.his_list{width:1345px;height:249px;margin:0 auto;background:url("../../images/pr_center/pr_history_b.jpg") 0 0 no-repeat;}
+
+
+.bg_bacchus{background:url("../../images/pr_center/bg_bacchus.gif") 0 0 repeat-x;}
+.pr_bacchus{height:651px;background:url("../../images/pr_center/bg_bacchus.jpg") 0 0 no-repeat;}
+.br_brand{background:#f6f6f6;height:249px;}
+.brand_list{width:965px;height:249px;margin:0 auto;background:url("../../images/pr_center/brand_list.jpg") 0 0 no-repeat;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

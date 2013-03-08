@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+body{background-color:#FBFBFB;}
+
+a{display:block; width:100%; height:100%;}
+
+.wrapper{margin:0 auto; width:960px; height:1240px; background:url(../../images/main/bg_body.jpg) 0 0 no-repeat;}
+
+.header_top{position:relative; width:100%; height:92px;}
+.header_top h1{position:absolute; left:40px; top:37px; width:166px; height:20px; text-indent:-9999px;}
+.header_top h1 a{display:block; width:100%; height:100%; }
+
+.header_top .memberMenu{position:absolute; right:40px; top:37px;}
+.header_top .memberMenu li{float:left; width:60px; height:20px; text-indent:-9999px;}
+.header_top .memberMenu li.first{width:50px;}
+.header_top .memberMenu li a{display:block; width:100%; height:100%; }
+
+.header_bottom{position:relative; margin:0 40px; overflow:hidden;}
+.header_bottom .gnb{position:relative; float:left;}
+.header_bottom .gnb{ padding:20px 15px 0 20px;}
+.header_bottom .gnb li{width:103px; height:27px; text-indent:-9999px; border-bottom:1px dotted gray;}
+.header_bottom .gnb li:last-child{border:none;}
+.header_bottom .gnb li a{display:block; width:100%; height:100%; background:url(../../images/main/gnb.gif) 0 0 no-repeat; }
+
+.header_bottom .gnb li .gnb_sub{position:absolute; left:142px; top:-9999px; width:105px; padding-left:11px; background:url(../../images/main/bg_gnb_dept2.gif) 0 0 repeat-y; opacity:0; }
+.header_bottom .gnb li.on .gnb_sub{opacity:1; top:0;}
+
+.header_bottom .gnb li .gnb_sub.sub4{width:117px; }
+.header_bottom .gnb li .gnb_sub.sub5{width:123px; }
+
+
+.header_bottom .gnb_sub:before{content:""; display:block; width:100%; height:20px; background:url(../../images/main/bg_gnb_dept2_top.gif) right 0 no-repeat; }
+.header_bottom .gnb_sub:after{content:""; display:block; width:100%; height:15px; background:url(../../images/main/bg_gnb_dept2_bottom.gif) right 0 no-repeat; }
+
+.header_bottom .gnb_sub li{width:83px; height:23px; text-indent:-9999px; border-bottom:1px dotted gray;}
+.header_bottom .gnb_sub.sub4 li{width:93px;}
+.header_bottom .gnb_sub.sub5 li{width:98px;}
+
+/* .header_bottom .gnb_sub li:last-child{border:none;} */			
+.header_bottom .gnb_sub li a{display:block; width:100%; height:100%; background:url(../../images/main/gnb_01_sub.gif) 0 0 no-repeat;}
+.header_bottom .gnb_sub.sub2 li a{background:url(../../images/main/gnb_02_sub.gif) 0 0 no-repeat;}
+.header_bottom .gnb_sub.sub3 li a{background:url(../../images/main/gnb_03_sub.gif) 0 0 no-repeat;}
+.header_bottom .gnb_sub.sub4 li a{background:url(../../images/main/gnb_04_sub.gif) 0 0 no-repeat;}
+.header_bottom .gnb_sub.sub5 li a{background:url(../../images/main/gnb_05_sub.gif) 0 0 no-repeat;}
+
+/* 
+.header_bottom .gnb_dept2 .gnb_sub{padding:0 11px; background:url(../../images/main/bg_gnb_dept2.gif) 0 0 repeat-y;}
+.header_bottom .gnb_dept2 .gnb_sub li{width:83px; height:23px; text-indent:-9999px; border-bottom:1px dotted gray;}
+.header_bottom .gnb_dept2 .gnb_sub li a{display:block; width:100%; height:100%; background:url(../../images/main/gnb_01_sub.gif) 0 0 no-repeat;}
+*/
+
+.header_bottom .family{float:right; width:190px; height:155px; padding-top:30px; overflow:hidden; }
+.header_bottom .family div.screen	{ height:130px; overflow:hidden; }
+.header_bottom .family .space{height:15px;}
+.header_bottom .family .familyBox{margin:0 15px; }
+.header_bottom .family .familyBox li{position:relative; height:80px; padding:10px 0px; border-bottom:1px dotted gray; overflow:hidden;}
+.header_bottom .family .familyBox li:last-child{border:none;}
+.header_bottom .family .familyBox li a{display:block; width:100%; height:100%;}
+.header_bottom .family .familyBox li img{vertical-align:top;}
+.header_bottom .family .familyBox li .tit{float:left;}
+.header_bottom .family .familyBox li .img{float:right; visibility:hidden;}
+.header_bottom .family .familyBox li.on .img{visibility:visible;}
+
+.quick_menu{position:fixed; top:350px; right:0; z-index:1000;}
+.quick_menu.hidden{display:none;}
+
+.quick_menu .btn1{width:35px; height:128px; background:url(../../images/main/quick_menu_01_off.png) 0 0 no-repeat;}
+.quick_menu .btn1:hover,
+.quick_menu .btn1:focus{width:35px; height:128px; background:url(../../images/main/quick_menu_01_on.png) 0 0 no-repeat;}
+.quick_menu .btn2{width:35px; height:107px; background:url(../../images/main/quick_menu_02_off.png) 0 0 no-repeat; margin-top:-40px;}
+.quick_menu .btn2:hover,
+.quick_menu .btn2:focus{width:35px; height:107px; background:url(../../images/main/quick_menu_02_on.png) 0 0 no-repeat;}
+
+
+.bannerArea{width:100%; height:400px; position:relative;}
+.bannerArea .btns{position:absolute; z-index:100; width:158px; height:18px; left:40px;; bottom:80px;; background:url(../../images/main/btn_control.png) 0 0 no-repeat;}
+.bannerArea .btns{text-indent:-9999px;}
+.bannerArea .btns .left{position:absolute; width:18px; height:16px; left:0;}
+.bannerArea .btns .right{position:absolute; width:18px; height:16px; left:18px;}
+
+.contentsArea{width:100%; height:440px; }
+
+.contentsArea .topArea{position:relative; width:100%; height:40px;}
+.contentsArea .topArea ul{margin-left:35px; margin-top:8px; height:130px; overflow:hidden;}
+.contentsArea .topArea ul li{float:left; height:30px; margin-right:20px; text-indent:-9999px;}
+.contentsArea .topArea ul .one{width:80px;margin-right:15px;}
+.contentsArea .topArea ul .two{width:100px;}
+.contentsArea .topArea ul .three{width:75px;}
+.contentsArea .topArea ul .four{width:90px;margin-right:15px;}
+.contentsArea .topArea ul .five{width:85px;}
+.contentsArea .topArea input{position:absolute; width:160px; height:16px; right:100px; top:8px; background:transparent;  }
+.contentsArea .topArea a.btnSearch{position:absolute;  width:50px; height:16px; right:40px; top:8px; text-indent:-9999px;}
+
+.contentsArea .middleArea{height:200px;}
+.contentsArea .middleArea ul{margin:10px 40px; overflow:hidden;}
+.contentsArea .middleArea ul li{float:left; width:190px; height:190px; margin-right:40px; text-indent:-9999px;}
+.contentsArea .middleArea ul li:last-child{width:188px; margin-right:0;}
+
+.contentsArea .bottomArea{position:relative; width:100%; height:200px;}
+
+.contentsArea .bottomArea ul li a{color:#3A3A3A; font-size:12px; line-height:28px; display:inline;  letter-spacing:-1px;}
+.contentsArea .bottomArea ul li a:hover,
+.contentsArea .bottomArea ul li a:focus{text-decoration:underline;}
+
+.contentsArea .bottomArea .txt1{position:absolute; width:400px; top:57px; left:117px;}
+.contentsArea .bottomArea .txt2{position:absolute; width:400px; top:57px; left:577px;}
+
+.contentsArea .bottomArea .btn1{position:absolute; width:45px; height:17px; top:25px; left:417px; }
+.contentsArea .bottomArea .btn2{position:absolute; width:45px; height:17px; top:25px; left:877px; }
+
+
+.footer{height:100px;}
+
+
+body.mainbg	{  position:relative;}
+
+div.centerBanner3						{ position:absolute; left:0px; top:300px; height:335px; width:100%; overflow:visible; }
+div.centerBanner3 div					{ position:absolute; }
+
+div.centerBanner3 div.visual1{bottom:0; left:0px; right:0px;}
+div.centerBanner3 div.visual2{bottom:0; left:0px; right:0px; display:none;}
+
+div.centerBanner3 div.visual1 div.bg	{ background:url("../../images/main/bg_main.jpg") no-repeat center top ; width:100%; /* width:1900px; */ height:230px; left:0px; bottom:80px; display:none; }
+div.centerBanner3 div.visual2 div.bg	{ background:url("../../images/main/bg2.png") no-repeat center top ; width:100%; /* width:1900px; */ height:284px; left:0px; bottom:26px; display:none; }
+
+div.centerBanner3 div.visual1 div.text	{ background:url("../../images/main/txt1.png") no-repeat left top ; width:883px; height:130px; left:0px; bottom:0px; display:none; }
+div.centerBanner3 div.visual2 div.text	{ background:url("../../images/main/txt2.png") no-repeat left top ; width:277px; height:121px; left:0px; bottom:0px; display:none; }
+
+div.centerBanner3 div.visual1 div.people{ background:url("../../images/main/main.png") no-repeat left top ; width:345px; height:486px; bottom:0px; }
+div.centerBanner3 div.visual2 div.people{ background:url("../../images/main/main2.png") no-repeat right top ; width:390px; height:450px; bottom:0px; }
+
+/* div.centerBanner3 div.text			{ background:url("../../images/main/dongpharm_center_text.png") no-repeat left top ; width:450px; height:326px; top:0px; } */
+
+
+body.bg1				{ background:url("../../images/sub1/dongpharm_bg.jpg") no-repeat center top; height:1200px; }
+body.bg2				{ background:url("../../images/sub1/dongpharm_bg2.jpg") no-repeat center top;  }
+body.bg3				{ background:url("../../images/sub1/dongst_bg.jpg") no-repeat center top; height:1180px; }
+
+div.subBBox		{ width:960px; margin:auto; }
+
+body.bg2 div.subBBox{background:url("../../images/sub1/dongpharm_bg2.jpg") no-repeat center top; height:2780px;}
+
+div.subBBox div.gnb	{ background-repeat:no-repeat; background-position:0 0; width:310px; height:298px; position:relative; z-index:10;}
+div.subBBox div.gnb.num0			{ background-image:url("../../images/sub1/dongpharm_gnb_step4.png") ;  }
+div.subBBox div.gnb h1				{ position:absolute; left:40px; top:35px; width:100px; height:30px; }
+div.subBBox div.gnb a				{ display:block; cursor:pointer; width:100%; height:100%; text-indent:-9999px;}
+div.subBBox div.gnb ul.list			{ position:absolute; left:40px; top:110px; width:120px;}
+div.subBBox div.gnb ul.list li		{ height:28px; }
+div.subBBox div.gnb.num4			{ background-image:url("../../images/sub1/dongpharm2_gnb_step4.png") ; }
+
+div.subBBox div.gnb.num0 ul.list{top:195px;}
+
+div.subBBox div.gnb2	{ background-repeat:no-repeat; background-position:0 0; width:310px; height:298px; position:relative; z-index:10;}
+div.subBBox div.gnb2.num0			{ background-image:url("../../images/sub1/dongst_gnb_step.png") ;  }
+div.subBBox div.gnb2 h1			{ position:absolute; left:40px; top:35px; width:100px; height:30px; }
+div.subBBox div.gnb2 a				{ display:block; cursor:pointer; width:100%; height:100%; text-indent:-9999px;}
+div.subBBox div.gnb2 ul.list			{ position:absolute; left:40px; top:110px; width:120px;}
+div.subBBox div.gnb2 ul.list li		{ height:28px; }
+
+div.centerBanner						{ position:absolute; left:0px; top:0px; height:635px; min-width:1024px; width:100%; overflow:hidden; }
+div.centerBanner div					{ position:absolute; }
+div.centerBanner div.bg				{ background:url("../../images/sub1/dongpharm_center_bg.jpg") no-repeat left top ; width:1900px; height:230px; left:0px; bottom:0px; display:none; }
+div.centerBanner div.text			{ background:url("../../images/sub1/dongpharm_center_text.png") no-repeat left top ; width:450px; height:326px; top:0px; }
+div.centerBanner div.people1		{ background:url("../../images/sub1/dongpharm_center_people1.png") no-repeat left top ; width:429px; height:545px; bottom:0px; }
+div.centerBanner div.people2		{ background:url("../../images/sub1/dongpharm_center_people2.png") no-repeat left top ; width:303px; height:316px; bottom:0px; }
+
+div.centerBanner2						{ position:absolute; left:0px; top:0px; height:599px; min-width:960px; width:100%; overflow:hidden; }
+div.centerBanner2 div					{ position:absolute; }
+div.centerBanner2 div.bg				{ background:url("../../images/sub1/dongst_center_bg.png") no-repeat left bottom ; width:1900px; height:599px; left:0px; bottom:0px; display:none; }
+div.centerBanner2 div.text				{ background:url("../../images/sub1/dongst_center_text.png") no-repeat left top ; width:544px; height:294px; top:0px; }
+div.centerBanner2 div.people1		{ background:url("../../images/sub1/dongst_center_people1.png") no-repeat left top ; width:409px; height:418px; bottom:0px; }

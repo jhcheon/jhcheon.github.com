@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko">
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<link rel="stylesheet" href="common/css/reset.css" />
+	<link rel="stylesheet" href="common/css/content.css" />
+	<script type="text/javascript" src="common/js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="common/js/jquery.event.drag-1.5.min.js"></script>
+	<script type="text/javascript" src="common/js/main.js"></script>
+	<script type="text/javascript" src="common/js/iscroll.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+	var myScroll;
+		function loaded() {
+			//20130107 수정 시작
+			myScroll = new iScroll('view', {
+				useTransform:false,
+				bounce: false,
+				zoom: false,
+				vScrollbar:false,
+				onBeforeScrollStart: function (e) {
+					var target = e.target;					
+					while (target.nodeType != 1) target = target.parentNode;					
+					if (target.tagName != 'A'&& target.parentNode.tagName != 'A'){						
+						e.preventDefault();
+					}
+				},
+				onBeforeScrollEnd: function (e) {
+					var target = e.target;
+					while (target.nodeType != 1) target = target.parentNode;
+					
+					if (target.tagName != 'SELECT' && target.tagName != 'INPUT' && target.tagName != 'TEXTAREA'){
+					}else{
+						var scrollPosY = -1 * (target.offsetTop - 50);
+						target.focus()
+						setTimeout(function(){ iscroll.scrollTo(0, scrollPosY, 200) }, 1000);
+					}
+				}
+
+			});
+		}
+
+</script>
+
+<div id="phone_box">
+	<p class="logo"><img src="image/main_logo.jpg" /></p>
+	<div id="view">
+		<div id="container scroller">
+			<div class="header fontReset">
+				<h1><a href="#"><img src="image/logo.jpg" /></a></h1>
+				<div class="gnb">
+					<p><img src="image/gnb_off.jpg" ></p>
+					<ul class="gnb_sub">
+						<li><a href="sub1.html"><img src="image/gnb01.jpg" /></a></li>
+						<li><a href=""><img src="image/gnb02.jpg" /></a></li>
+						<li><a href=""><img src="image/gnb03.jpg" /></a></li>
+						<li><a href=""><img src="image/gnb04.jpg" /></a></li>
+						<li><a href=""><img src="image/gnb05.jpg" /></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="content fontReset">
+				<div class="visual">
+					<ul>
+						<li><img src="image/main1.jpg" /></li>
+						<li><img src="image/main2.jpg" /></li>
+					</ul>
+					<div class="btn_set">
+						<a href="#" class="on"><img src="image/btn_point.png" /></a>
+						<a href="#"><img src="image/btn_point.png" /></a>
+					</div>
+				</div>
+				<div><img src="image/main3.jpg" alt="" /></div>
+				<div><img src="image/main4.jpg" alt="" /></div>
+				<div><img src="image/main5.jpg" alt="" /></div>
+			</div>
+			<div class="foot">
+				<p class="btn_family"><img src="image/btn_family_off.jpg" /></p>
+				<p class="family"><img src="image/img_family.jpg" /></p>
+				<p><img src="image/foot.jpg" /></p>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	window.onload = function(){
+		loaded();
+	}
+	/*setTimeout(function(){
+		
+		},500)*/
+	
+</script>
+</body>
+</html>

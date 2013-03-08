@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>동아홀딩스 시안 </title>
+	<link rel="stylesheet" type="text/css" href="common/css/common.css"/>
+	<link rel="stylesheet" type="text/css" href="common/css/contents.css"/>
+	<script type="text/javascript" src="common/js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="common/js/jquery.easing.1.3.js"></script>	
+	<script type="text/javascript" src="common/js/main.js"></script>	
+</head>
+<body class="bg3">
+
+<div class="subBBox">
+
+	<div class="gnb2 num0">
+		<h1><a href="main_b.html">donga</a></h1>
+		<ul class="list">
+		<li><a href="#">동아ST</a></li>
+		<li><a href="#">사업영역</a></li>
+		<li><a href="#">경영성과</a></li>
+		<li><a href="#">제품소개</a></li>
+		<li><a href="#">연구개발</a></li>
+		<li><a href="#">고객지원</a></li>
+		</ul>
+		<div class="bg"></div>
+	</div>
+
+	<div class="quick_menu">
+		<a href="" class="btn1"></a></br>
+		<a href="" class="btn2"></a>
+	</div>
+
+</div> <!-- end of wrapper -->
+
+<div class="centerBanner2">
+	<div class="bg"></div>
+	<div class="text"></div>
+	<div class="people1"></div>
+	<div class="people2"></div>
+</div>
+
+<script type="text/javascript">
+$(function(){
+	var $gnb = $('ul.list') ;
+	var $banner = $('div.centerBanner2') ;
+	/*
+	$gnb.find('> li').bind( 'mouseenter focusin' , gnbOverHandler ) ;
+	function gnbOverHandler () {		
+		var idx = $(this).index() + 1 ;
+		var _url = "./images/sub1/dongst_gnb_step" + idx + ".png" ;
+		$gnb.closest('div.gnb2').css({ 'background-image' : 'url(' + _url + ')' }) ;		
+	}
+	$gnb.find('> li').bind( 'mouseleave focusout' , gnbOutHandler ) ;
+	function gnbOutHandler () {
+		$gnb.closest('div.gnb2').css({ 'background-image' : 'url("./images/sub1/dongst_gnb_step.png")' }) ;
+	}
+*/
+	$(window).resize(function(){
+		aniHandler () ;	
+	});
+
+	function aniHandler () {
+		$banner.find('.bg').fadeIn( 1500 ) ;
+		$banner.find('.text').css({ 'right' : -$(window).width() }) ;
+		$banner.find('.text').stop().animate({ 'right' : ($(window).width() / 2) - 450 } , 1700 , 'easeInOutQuint' ) ;
+		$banner.find('.people1').css({ 'left' : -429 }) ;
+		$banner.find('.people1').stop().animate({ 'left' : ($(window).width() / 2) - 230 } , 1200 , 'easeInOutQuint' ) ;		
+	}
+	aniHandler () ;
+}) ;
+</script>
+
+</body>
+</html>

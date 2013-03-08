@@ -1,0 +1,97 @@
+/* 동아쏘시오 서브 */
+
+.sub_wrap {min-width:960px;}
+
+.gnb {height:119px; background:url('../../images/sub/temp_gnb.jpg') no-repeat 50% top;}
+.sub_container {width:100%;}
+.topbg {width:100%; background:url('../../images/sub/top_bg.jpg') no-repeat 50% top;}
+.topbg p {width:960px; margin:0 auto;}
+
+.content_wrap {background:url('../../images/sub/bg_cont.gif') repeat-y 50% top; }
+.contents {width:960px; margin:0 auto;}
+
+
+.footer_wrap {position:relative; z-index:100; width:100%; min-height:142px; background-color:#ededed;}
+
+.btcont_wrap {height:40px; overflow:hidden;  position:absolute; /*left:50%; margin-left:-950px;*/ left:center; top:-40px; z-index:10; width:100%; background:url('../../images/common/bg_btwrap.gif') no-repeat 50% top; }
+.btcont {position:relative; width:960px; height:317px; margin:0 auto;}
+
+.bt_left {width:640px; padding-top:12px; height:28px; line-height:16px; overflow:hidden;}
+.bt_left h3 {float:left; width:140px;}
+.bt_left p.new {float:left; width:260px; overflow:hidden; padding:1px 0 0 27px; background:url('../../images/common/ico_new.gif') no-repeat 0 1px;}
+.bt_left p.new a {color:#939393; text-decoration:none;}
+.bt_left p.detail {float:right; padding-right:40px;}
+
+.bt_right {overflow:hidden;}
+.bt_right dl {float:left; width:290px; height:237px;  padding:40px 0 0 30px;}
+.bt_right dl dt { padding-bottom:30px;}
+.bt_right dl dd { padding-bottom:12px;}
+
+.family_wrap h4 {position:absolute; top:0; left:640px;}
+.family_wrap dl.fm1 {background:url('../../images/common/ftbg_01.jpg') no-repeat left top;}
+.family_wrap dl.fm2 {background:url('../../images/common/ftbg_02.jpg') no-repeat left top;}
+.family_wrap dl.fm3 {background:url('../../images/common/ftbg_03.jpg') no-repeat left top;}
+
+.brand_wrap h4 {position:absolute; top:0; left:800px;}
+.brand_wrap dl {display:none;}
+.brand_wrap dl.bd1 {background:url('../../images/common/ftbg_04.jpg') no-repeat left top;}
+.brand_wrap dl.bd2 {background:url('../../images/common/ftbg_05.jpg') no-repeat left top;}
+.brand_wrap dl.bd3 {background:url('../../images/common/ftbg_06.jpg') no-repeat left top;}
+
+.footer_wrap .footer {overflow:hidden; width:960px; margin:0 auto; padding-top:28px; margin-top:40px;}
+.footer_wrap .footer h1 {float:left; width:163px;}
+.footer_wrap .footer p {float:left; margin-right:126px;}
+.footer_wrap .footer ul li {display:inline;}
+
+/* 동아ST */
+.temp_wrap {width:100%; height:100%; background:url('../../images/sub_main/bg_st.jpg') no-repeat center top;}
+.temp_wrap .st_top {width:960px; margin:0 auto;}
+.temp_wrap .st_cont {width:960px; margin:0 auto;}
+
+/* 동아제약 */
+.drug_wrap {width:100%; height:100%; background:url('../../images/sub_main/bg_drug.jpg') no-repeat center top;}
+.drug_wrap .drug_top {width:960px; margin:0 auto;}
+.drug_wrap .drug_cont {width:960px; margin:0 auto;}
+
+/*
+.pr_wrapArea{position: absolute; width:1920px; bottom:0px; left:50%; margin-left: -952px; background:url("../../images/pr_center/bg_header.gif") 0 0 no-repeat;}
+.pr_wrap{width:100%;background:url("../../images/pr_center/bg_container.gif") repeat;}
+.pr_header{display:none; width:967px;height:31px;margin:0 auto;background:url("../../images/pr_center/pr_header.gif") 0 0 no-repeat;}
+.pr_header ul{overflow:hidden;margin-left:162px;}
+.pr_header ul li{float:left;}
+.pr_header ul li a{display:inline-block;padding:15px 80px;}
+*/
+
+.pr_container{width:967px;height:0px;margin:0 auto;background:url("../../images/pr_center/pr_center.jpg") 0 0 no-repeat;}
+.pr_container ul{width:465px;padding-top:403px;}
+.pr_container ul li{}
+.pr_container ul li a{display:inline-block;padding:50px 232px;}
+
+.bg_bottom{height:181px;background:url("../../images/pr_center/bg_bottom.gif") 0 0 no-repeat;}
+.pr_bottom{width:967px;height:181px;margin:0 auto;background:url("../../images/pr_center/pr_bottom.gif" ) 0 0 no-repeat;}
+
+.pr_history{height:651px;background:url("../../images/pr_center/pr_history.jpg") 0 0 no-repeat;}
+.br_years{background:#d5d2cb;height:249px;}
+.his_list{width:1345px;height:249px;margin:0 auto;background:url("../../images/pr_center/pr_history_b.jpg") 0 0 no-repeat;}
+
+
+.bg_bacchus{background:url("../../images/pr_center/bg_bacchus.gif") 0 0 repeat-x;}
+.pr_bacchus{height:651px;background:url("../../images/pr_center/bg_bacchus.jpg") 0 0 no-repeat;}
+.br_brand{background:#f6f6f6;height:249px;}
+.brand_list{width:965px;height:249px;margin:0 auto;background:url("../../images/pr_center/brand_list.jpg") 0 0 no-repeat;}
+
+/* 역사관 */
+.hs_wrap {width:100%; }
+.hs_header {height:31px; width:100%; background:url('../../images/pr_center/bg_prtop.jpg') no-repeat center top;}
+.hs_gnb {position:relative; width:1345px; min-width:1345px; height:31px;  margin:0 auto;  background:url('../../images/pr_center/bg_prgnb.jpg') no-repeat left top;}
+.hs_gnb ul {position:absolute; margin-left:343px;}
+.hs_gnb ul li {display:inline; width:160px;}
+.hs_gnb ul li a {padding:18px 77px; display:inline-block;}
+
+.hs_container {width:100%; height:100%; background:url('../../images/pr_center/bg_hscont.gif') repeat-x left top;}
+.hs_cont1 {width:1345px; height:651px; margin:0 auto; background:url('../../images/pr_center/pr_history.jpg') no-repeat left top;}
+.hs_cont2 {width:100%; height:249px; background-color:#d5d2cb;}
+.hs_cont2 .hs_year {width:1345px; height:249px; margin:0 auto; background:url('../../images/pr_center/hs_cont2.jpg') no-repeat left top;}
+
+.hs_footerwrap {width:100%; background:url('../../images/pr_center/bg_bottom.gif') no-repeat center top;}
+.hs_footer {width:1345px; height:181px; margin:0 auto; background:url('../../images/pr_center/hs_footer.jpg') no-repeat left top;} 
